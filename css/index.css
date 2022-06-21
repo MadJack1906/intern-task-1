@@ -1,0 +1,40 @@
+:root {
+    --light-coral: #e88983;
+    --yellow-buff: #efd489;
+}
+
+body {
+    font-family: "Montseratt", sans-serif;
+}
+
+#banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/Banner.png), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-color: var(--light-coral);
+    background-blend-mode: soft-light, lighten;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+#h1-header {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#h2-subheader {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.center {
+    margin: auto;
+}
+
+#learn-more {
+    border: 4px solid white;
+    border-radius: 0;
+    font-weight: bold;
+}
