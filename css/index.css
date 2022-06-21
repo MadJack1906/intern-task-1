@@ -3,7 +3,7 @@
     --yellow-buff: #efd489;
 }
 
-body > *{
+body>* {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -52,6 +52,7 @@ body > *{
 
 .content-text {
     color: darkgrey;
+    margin-bottom: 2em;
 }
 
 /* #learn-more {
@@ -98,6 +99,7 @@ body > *{
     width: 100%;
     flex-basis: 52%;
 }
+
 .link {
     text-decoration: none;
     font-weight: bold;
@@ -121,9 +123,10 @@ body > *{
     justify-content: space-space;
     width: 100%;
     flex-basis: 20%;
-    
+
 }
-.shortcut-container:hover {   
+
+.shortcut-container:hover {
     cursor: pointer;
 }
 
@@ -159,12 +162,12 @@ body > *{
 .story-images-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .story-image-container {
-    display: flex;
     
+    flex-basis: 31%;
 }
 
 .first-story-image {
@@ -172,6 +175,7 @@ body > *{
     background-image: url("/assets/story-laptop.png"), linear-gradient(var(--light-coral), var(--yellow-buff));
     background-size: cover;
     position: relative;
+    
 }
 
 .first-story-image-text-container {
@@ -181,16 +185,49 @@ body > *{
     font-weight: bold;
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
 }
 
-.story-image {
-    object-fit: contain;
-    object-position: center;
-    max-height: 388px;
+.story-image-container {
+    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
 }
 
-@media only screen and (max-width: 900px){
+#first-image {
+    background-image: url('/assets/story-laptop.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, lighten;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px #888888;
+    height: 190px;
+}
+
+#second-image {
+    background-image: url('/assets/story-desk.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#third-image {
+    background-image: url('/assets/story-desk-2.png');
+    background-size: cover;
+}
+.test-image-container {
+    background-image: url('/assets/story-desk.png');
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 900px) {
     #banner {
         background-size: cover;
         background-position: center;
@@ -210,14 +247,17 @@ body > *{
     }
 
     .shortcut-text {
-        
+
         color: white;
         font-weight: bold;
     }
 
-    .story-images-container {
+    /* .story-images-container {
         flex-direction: column;
     }
 
-    
+    .story-image-container {
+        flex-basis: 100%;
+    } */
+
 }
