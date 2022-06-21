@@ -19,6 +19,7 @@ body>* {
     background-repeat: no-repeat;
     background-image: url(/assets/Banner.png), linear-gradient(var(--light-coral), var(--yellow-buff));
     background-color: var(--light-coral);
+    background-position: center;
     background-blend-mode: soft-light, lighten;
     height: 100vh;
     display: flex;
