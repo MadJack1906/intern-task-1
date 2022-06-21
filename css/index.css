@@ -36,12 +36,22 @@ body > *{
     font-weight: bold;
 }
 
-#h2-subheader {
+.h2-subheader {
     font-family: 'Kaushan Script', cursive;
 }
 
 .center {
     margin: auto;
+}
+
+.border-red {
+    height: 2px;
+    background-color: var(--light-coral);
+    margin: 2em auto;
+}
+
+.content-text {
+    color: darkgrey;
 }
 
 /* #learn-more {
@@ -86,7 +96,7 @@ body > *{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    flex-basis: 55%;
+    flex-basis: 52%;
 }
 .link {
     text-decoration: none;
@@ -146,14 +156,45 @@ body > *{
     background-color: white;
 }
 
+.story-images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.story-image-container {
+    display: flex;
+    
+}
+
+.first-story-image {
+    display: block;
+    background-image: url("/assets/story-laptop.png"), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-size: cover;
+    position: relative;
+}
+
+.first-story-image-text-container {
+    height: 262px !important;
+    width: 388px !important;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+.story-image {
+    object-fit: contain;
+    object-position: center;
+    max-height: 388px;
+}
 
 @media only screen and (max-width: 900px){
     #banner {
-        
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding-bottom: 2em;
     }
 
     #banner-container {
@@ -167,4 +208,16 @@ body > *{
     .links-container {
         display: none;
     }
+
+    .shortcut-text {
+        
+        color: white;
+        font-weight: bold;
+    }
+
+    .story-images-container {
+        flex-direction: column;
+    }
+
+    
 }
