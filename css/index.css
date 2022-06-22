@@ -54,6 +54,12 @@ body>* {
     margin: 2em auto;
 }
 
+.border-red-author {
+    height: 2px;
+    background-color: var(--light-coral);
+    margin: 1em 0;
+}
+
 .content-text {
     color: darkgrey;
     margin-bottom: 2em;
@@ -250,6 +256,11 @@ body>* {
     align-items: center;
     color: white;
     width: 100%;
+    border-right: 1px solid white;
+}
+
+.fact-container:last-of-type{
+    border-right: none;
 }
 
 .accomplished {
@@ -317,6 +328,34 @@ body>* {
     left: 32em;
 }
 
+#quote{
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+.quote-text-container {
+    height: 100%;
+    margin: auto;
+}
+
+.quote-image-container {
+    height: 100%;
+    margin: auto 2em auto 0;
+    padding: 0;
+}
+
+.quote-img {
+    
+}
+
+.previous-quote-btn {
+    height: 100%;
+    border: 1px solid black;
+}
+
+.service-offered-img {
+    object-fit: contain;
+}
 
 @media only screen and (max-width: 900px) {
     #banner {
