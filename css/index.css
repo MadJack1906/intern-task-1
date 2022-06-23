@@ -585,6 +585,140 @@ body>* {
     background-color: lightgray;
 }
 
+.first-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sample-work {
+    width: 100%;
+}
+
+#beach-side {
+    background-image: url('/assets/beach-side.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+}
+
+.text-container {
+    height: 30em;
+}
+
+.sample-work-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+}
+
+
+
+.special {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.work-container {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#first-work {
+    background-image: url('/assets/beach-side.png');
+}
+
+#first-work:hover {
+    background-image: url('/assets/beach-side.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, hard-light;
+}
+
+#second-work {
+    background-image: url('/assets/roof-size.png')
+}
+
+#second-work:hover {
+    background-image: url('/assets/roof-size.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, hard-light;
+}
+
+#third-work {
+    background-image: url('/assets/bridge.png')
+}
+
+#third-work:hover {
+    background-image: url('/assets/tower.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, hard-light;
+}
+
+#fourth-work {
+    background-image: url('/assets/tower.png');
+}
+
+#fourth-work:hover {
+    background-image: url('/assets/tower.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, hard-light;
+}
+
+#fifth-work {
+    background-image: url('/assets/jellyfish.png');
+}
+
+#fifth-work:hover {
+    background-image: url('/assets/jellyfish.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, hard-light;
+}
+
+#sixth-work {
+    background-image: url('/assets/ceiling.png');
+    background-position: top;
+}
+
+#sixth-work:hover {
+    background-image: url('/assets/ceiling.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, hard-light;
+}
+
+#seventh-work {
+    background-image: url('/assets/building.png');
+}
+
+#seventh-work:hover {
+    background-image: url('/assets/building.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, hard-light;
+}
+
+.creatively-design {
+    font-size: 0.8rem;
+}
+
+.work-container:hover > .hover-content { 
+    visibility: visible !important;
+}
+
+.work-details {
+    font-size: 0.7rem;
+}
+
+
+.hover-content {
+    height: 20em !important;
+    width: 100%;
+    opacity: 1;
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 900px) {
     #banner {
         background-size: cover;
