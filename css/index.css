@@ -467,6 +467,119 @@ body>* {
     text-align: justify;
 }
 
+.member-container {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-right: 2em;
+}
+
+.member-container:last-of-type {
+    margin-right: 0em;
+}
+
+#matthew-dixon, #christopher-campbell, #michael-fertig {
+    background-image: url('/assets/matthew-dixon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20%;
+}
+
+#christopher-campbell {
+    background-image: url('/assets/christopher-campbell.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#michael-fertig {
+    background-image: url('/assets/michael-fertig.png');
+    background-position: center;
+}
+
+#matthew-dixon:hover {
+    background-image: url('/assets/matthew-dixon.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, lighten;
+    width: 100%;
+    box-shadow: 0.5em 0.5em var(--deep-green);
+}
+
+#christopher-campbell:hover {
+    background-image: url('/assets/christopher-campbell.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, lighten;
+    width: 100%;
+    box-shadow: 0.5em 0.5em var(--deep-green);
+}
+
+#michael-fertig:hover {
+    background-image: url('/assets/michael-fertig.png'), linear-gradient(var(--light-coral), var(--yellow-buff));
+    background-blend-mode: soft-light, lighten;
+    width: 100%;
+    box-shadow: 0.5em 0.5em var(--deep-green);
+}
+
+
+#matthew-dixon:hover > .member-socials{
+    visibility: visible;
+}
+
+#christopher-campbell:hover > .member-socials{
+    visibility: visible;
+}
+
+#michael-fertig:hover > .member-socials{
+    visibility: visible;
+}
+
+.member-socials {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    height: 30em;
+    max-width: 100%;
+    visibility: hidden;
+}
+
+.socials {
+    height: inherit;
+    padding: 0.5rem 0.8rem;
+}
+
+.socials-link-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-link {
+    background-color: var(--yellow-buff);
+}
+
+.social-link:first-of-type {
+    background-color: var(--light-coral);
+}
+
+.social-link:hover {
+    cursor: pointer;
+    background-color: wheat;
+}
+
+.member-details {
+    padding: 2em;
+}
+
+.member-name, .member-role {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.member-role {
+    font-size: 0.8em;
+    font-style: italic;
+    text-transform: none;
+    font-weight: normal;
+}
+
 @media only screen and (max-width: 900px) {
     #banner {
         background-size: cover;
@@ -501,10 +614,6 @@ body>* {
         flex-basis: 100%;
     }
 
-    #feature {
-        
-    }
-
     .iphone-container {
         
         z-index: 1;
@@ -518,5 +627,9 @@ body>* {
 
     .services-offered {
         margin-top: 1em;
+    }
+
+    .member-container {
+        flex-direction: column;
     }
 }
