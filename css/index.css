@@ -782,6 +782,51 @@ body>* {
 #fourth-client {
     background-image: url('/assets/client-4.png');
 }
+
+
+.blog-container {
+    width: 100%;
+    position: relative;
+    margin-right: 1em;
+
+}
+
+.blog-container:last-of-type {
+    margin-right: 0;
+}
+
+#first-blog {
+    background-image: url('/assets/first-blog.png');
+    background-size: contain;
+    
+}
+
+.blog-image {
+    background-size: cover;
+    width: 100%;
+}
+
+#second-blog-image {
+    height: 11.2em;
+}
+
+.date-created {
+    background-color: var(--deep-green);
+    padding: 0.5em 1em;
+    width: fit-content;
+    color: white;
+    position: absolute;
+    top: 22%;
+    right: 80%;
+}
+
+.blog-stat-icon{
+    color: var(--deep-green);
+}
+
+.blog-info {
+    border-bottom: 1px solid lightgray;
+}
 @media only screen and (max-width: 900px) {
     #banner {
         background-size: cover;
