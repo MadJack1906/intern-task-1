@@ -118,7 +118,7 @@ body>* {
 }
 
 #story-about-us {
-    min-wheight: 100vh;
+    min-height: 100vh;
 }
 
 .shortcuts-container {
@@ -619,8 +619,6 @@ body>* {
     grid-template-columns: auto auto;
 }
 
-
-
 .special {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -719,6 +717,71 @@ body>* {
     visibility: hidden;
 }
 
+.testimonial-image {
+    border-radius: 100%;
+    object-position: center;
+    height: 100%;
+}
+
+#testimonial-image-container{
+    margin: 0 0 !important;
+}
+
+#happy-clients {
+    background-image: url('/assets/happy-clients.png'), linear-gradient(#fcfcfc, #E6E6E6);;
+    background-blend-mode: soft-light, lighten;
+
+}
+
+.client-testimonial {
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.client-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-info-container > p {
+    text-align: left;
+}
+
+.line-separator{
+    border: 1px solid red;
+    height: 23px;
+    background-color: red;
+    width: 5%;
+    margin: 0 0 1em 0;
+    height: fit-content;
+}
+
+.client-picture {
+    margin-right: 2em;
+}
+
+#first-client, #second-client, #third-client, #fourth-client {
+    background-image: url('/assets/client1 test.png');
+    background-size: cover;
+    height: 6em;
+    width: 6em;
+    background-position: 40%;    
+    border-radius: 100%;
+}
+
+#second-client {
+    background-image: url('/assets/client-2.png');
+}
+
+#third-client {
+    background-image: url('/assets/client-3.png');
+}
+
+#fourth-client {
+    background-image: url('/assets/client-4.png');
+}
 @media only screen and (max-width: 900px) {
     #banner {
         background-size: cover;
